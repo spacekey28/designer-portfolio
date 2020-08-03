@@ -47,5 +47,7 @@ return [
     'namespaces' => [
         /* Given the below example, in your views use something like: @include('WC::some.view.or.partial.here') */
         // 'WC' => WP_PLUGIN_DIR.'/woocommerce/templates/',
+
+        'icon' => get_theme_file_path().'/resources/assets/icons'
     ],
 ];

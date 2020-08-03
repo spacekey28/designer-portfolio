@@ -1,0 +1,17 @@
+.loadmore {
+    display: block;
+    margin: 0 auto;
+    padding: 8px 18px;
+    cursor: pointer;
+    font-family: $primary-font;
+    line-height: 32px;
+    border: none;
+    background: $white;
+    -webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.12);
+    
+    &:hover {
+        -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,0.12);
+        box-shadow: 0 0 2px 0 rgba(0,0,0,0.12);
+    }
+}

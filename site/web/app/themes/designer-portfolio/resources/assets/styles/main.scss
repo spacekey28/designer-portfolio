@@ -1,7 +1,7 @@
 @import "common/variables";
 
 /** Import everything from autoload */
-@import "./autoload/**/*";
+// @import "./autoload/**/*";
 
 /**
  * Import npm dependencies
@@ -13,10 +13,11 @@
 
 /** Import theme styles */
 @import "common/global";
+@import "common/typography";
+@import "common/base";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
-@import "components/wp-classes";
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";
