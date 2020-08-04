@@ -14,6 +14,5 @@
               </div>
           </div>
       </div>
-      @php dynamic_sidebar('sidebar-footer') @endphp
   </div>
 </footer>

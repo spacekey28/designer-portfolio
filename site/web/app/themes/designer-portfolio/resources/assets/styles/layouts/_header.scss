@@ -6,6 +6,24 @@
   z-index: 1020;
 }
 
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.brand {
+  position: relative;
+  margin-top: 40px;
+  height: 56px;
+
+  &-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
 .nav-primary {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,7 +163,7 @@
           text-align: center;
           margin-bottom: 60px;
           
-          &.current-item {
+          &.current-menu-item {
               text-decoration: underline;
           }
           

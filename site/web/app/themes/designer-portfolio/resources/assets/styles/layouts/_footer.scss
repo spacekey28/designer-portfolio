@@ -8,10 +8,14 @@
     justify-content: space-around;
     padding: 2rem 0;
     
-    a {
-        font-family: $primary-font;
-        color: $base-color;
-        padding: 1rem;
+    ul {
+        padding: 0;
+        li {
+            list-style: none;
+            font-family: $primary-font;
+            color: $base-color;
+            padding: 1rem;
+        }
     }
 }
 @media only screen and (min-width: $breakpoint-md) {
