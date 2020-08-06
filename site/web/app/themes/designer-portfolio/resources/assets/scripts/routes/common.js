@@ -17,6 +17,13 @@ export default {
           });
       }
     });
+
+    // animate scolling move
+    $('a.scrolldown-arrow').on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+    });
+
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

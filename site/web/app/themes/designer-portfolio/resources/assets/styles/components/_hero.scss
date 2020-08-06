@@ -18,7 +18,9 @@
     
     &__slogan {
         display: inline-block;
-        margin-top: 120px;
+        max-width: 650px;
+        margin: 120px auto 0;
+        text-align: center;
     }
     
     &__bottom-lead {
