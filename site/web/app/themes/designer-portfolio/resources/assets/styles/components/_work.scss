@@ -1,0 +1,126 @@
+/*** WORK ***/
+
+.work {
+    .entry-work {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 60px 0;
+        
+        .feature-img {
+            height: 212px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+        }
+        .excerpt {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            overflow: hidden;
+            
+            h2 {
+                font-size: 28px;
+                line-height: 40px;
+                margin: 20px 0 0;
+            }
+            
+            p {
+                line-height: 32px;
+                margin: 10px 0 0;
+            }
+            
+            a {
+                color: $base-color;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: $breakpoint-md) {
+    .work {
+        .entry-work {
+            .feature-img {
+                height: 392px;
+            }
+            
+            .excerpt {
+                h2 {
+                    font-size: 32px;
+                    line-height: 44px;
+                    margin: 20px 0 0;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: $breakpoint-lg) {
+    .work {
+        .entry-work {
+            .feature-img {
+                height: 358px;
+            }
+            
+            &:nth-child(odd) {
+                .feature-img {
+                    -webkit-box-ordinal-group: 2;
+                    -ms-flex-order: 1;
+                    order: 1;
+                }
+                .excerpt {
+                    -webkit-box-ordinal-group: 3;
+                    -ms-flex-order: 2;
+                    order: 2;
+                }
+            }
+            &:nth-child(even) {
+                .feature-img {
+                    -webkit-box-ordinal-group: 3;
+                    -ms-flex-order: 2;
+                    order: 2;
+                }
+                .excerpt {
+                    -webkit-box-ordinal-group: 2;
+                    -ms-flex-order: 1;
+                    order: 1;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: $breakpoint-xl) {
+    .work {
+        .entry-work {
+            .feature-img {
+                height: 420px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $breakpoint-xxl) {
+    .work {
+        .entry-work {
+            padding: 90px 0;
+            
+            .feature-img {
+                height: 600px;
+            }
+        }
+    }
+}

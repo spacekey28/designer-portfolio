@@ -24,6 +24,25 @@ export default {
       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
     });
 
+    // Work load more action
+    var numWork = $('.entry__container .entry-work').length;
+    var limit = 5;
+    var limit_1 = limit-1;
+    var $workLoadmore = $('.work button.loadmore');
+    
+    if(limit >= numWork){
+        $workLoadmore.hide();
+    }
+    
+    $('.entry__container .entry-work:gt('+limit_1+')').hide();
+    $workLoadmore.click(function () {
+        $('.entry__container .entry-work:gt('+limit_1+')').css('display', 'flex').hide().fadeIn('slow', function() {
+            $(this).addClass('added');
+        });
+        $(this).hide();
+    });
+    
+
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

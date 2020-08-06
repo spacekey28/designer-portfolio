@@ -5,5 +5,6 @@
     @include('partials.page-hero')
     
     @include('partials.content-page')
+    @include('partials.section-work')
   @endwhile
 @endsection
