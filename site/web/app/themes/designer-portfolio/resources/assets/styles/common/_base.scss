@@ -17,10 +17,6 @@ body {
   flex-direction: column;
 }
 
-.content-wrap {
-  padding-top: 80px;
-}
-
 .content {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 auto;
@@ -81,10 +77,6 @@ img.responsive {
 }
 
 @media only screen and (min-width: $breakpoint-md) {
-  .content-wrap {
-    padding-top: 96px;
-  }
-
   .container,
   .container-fluid,
   .hscroll__container {
