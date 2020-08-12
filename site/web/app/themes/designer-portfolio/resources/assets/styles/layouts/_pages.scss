@@ -40,3 +40,98 @@
         padding: 200px 0 120px;
     }
 }
+
+
+
+/** 404 **/
+
+.page-center {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.page-center-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    
+    &__content {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    h1 {
+        font-size: 32px;
+        line-height: 46px;
+    }
+    
+    p {
+        line-height: 32px;
+        
+        a {
+            font-family: $primary-font;
+            text-decoration: underline;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    .pw-field {
+        width: 100%;
+        background: $grey-bg;
+        padding: 15px;
+        border: none;
+        border-radius: 1px;
+        font-family: $primary-font;
+        font-size: 16px;
+        line-height: 32px;
+        
+        &::-webkit-input-placeholder {
+            color: rgba(153,153,153,0.7);
+        }
+        
+        &:-ms-input-placeholder {
+            color: rgba(153,153,153,0.7);
+        }
+        
+        &::placeholder {
+            color: rgba(153,153,153,0.7);
+        }
+        
+        &:focus, &:active {
+            border: none;
+            outline: none;
+        }
+    }
+}
+
+@media only screen and (min-width: $breakpoint-md) {
+    .page-center-header {        
+        &__content {
+            max-width: 66.666667%;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 44px;
+            line-height: 56px;
+        }
+    }
+}
