@@ -1,0 +1,14 @@
+{
+	"name": "dp-block/zigzag-row",
+	"title": "Zigzag Row",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Zigzag Row block written with ESNext standard and JSX support – build step required.",
+	"textdomain": "dp-block",
+	"supports": {
+		"html": false
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
